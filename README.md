@@ -190,37 +190,29 @@ Stores employee dependent details.
 
 ---
 
-## Repository Structure
+## Entity Relationship Diagram (ERD)
 
-HR-Analytics-and-Database-Management-SQL
+The database consists of seven interconnected tables:
 
-├── README.md
+- Regions
+- Countries
+- Locations
+- Departments
+- Jobs
+- Employees
+- Dependents
 
-├── Documentation
+### Key Relationships
 
-│   └── SQL-HR_Database_Management_System.docx
+- One Region can have many Countries.
+- One Country can have many Locations.
+- One Location can have many Departments.
+- One Department can have many Employees.
+- One Job can be assigned to many Employees.
+- One Employee can have multiple Dependents.
+- One Employee can manage multiple Employees (Self Join Relationship).
 
-├── SQL_Scripts
-
-│   └── HR_Database_Queries.sql
-
-├── Screenshots
-
-│   ├── Employee_Analysis.png
-
-│   ├── Department_Analysis.png
-
-│   ├── Salary_Analysis.png
-
-│   └── Manager_Hierarchy.png
-
-└── Insights
-
-```
-└── HR_Business_Insights.md
-```
-
----
+ER Diagram is available in the Documentation folder.
 
 ## Skills Demonstrated
 
